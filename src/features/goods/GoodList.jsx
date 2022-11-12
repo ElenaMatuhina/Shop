@@ -2,7 +2,7 @@ import { useGoods } from './use-goods';
 import { Item } from '../../components/item/Item';
 
 const GoodList = () => {
-  const goods = useGoods();
+  const [goods, {status, error}] = useGoods();
   console.log(goods);
 
   if (!goods.length) {

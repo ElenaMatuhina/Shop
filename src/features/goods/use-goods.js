@@ -5,7 +5,7 @@ import { selectGoodsInfo, selectAllGoods } from './goods-slice';
 
 export const useGoods = () => {
   const dispatch = useDispatch();
-  const { quantity } = useSelector(selectGoodsInfo);
+  const { status, error, quantity } = useSelector(selectGoodsInfo);
   const goods = useSelector(selectAllGoods);
 
   useEffect(() => {
@@ -14,5 +14,5 @@ export const useGoods = () => {
     }
   }, [quantity, dispatch]);
 
-  return goods;
+  return [goods, {status, error}];
 };

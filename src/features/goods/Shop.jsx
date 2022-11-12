@@ -1,9 +1,9 @@
-import { useInfo } from './use-info';
+import { useGoods } from './use-goods';
 import { GoodList } from './GoodList';
 import { Preloader } from '../../components/preloader';
 
 const Shop = () => {
-  const [status, error] = useInfo();
+  const [goods, { status, error }] = useGoods();
 
   return (
     <main className="container content">
