@@ -1,6 +1,6 @@
 import { Header } from './components/header';
 import { Footer } from './components/footer';
-import { Shop } from './components/shop';
+import { Shop } from './features/goods/Shop';
 
 function App() {
   return (
