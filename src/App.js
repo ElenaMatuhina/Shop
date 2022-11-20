@@ -1,6 +1,6 @@
 import { Header } from './components/header';
 import { Footer } from './components/footer';
-import { Shop } from './features/goods/Shop';
+import { Shop } from './features/shop';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Header />
       <Shop />
       <Footer />
-      <p>hello</p>
+  
     </>
   );
 }

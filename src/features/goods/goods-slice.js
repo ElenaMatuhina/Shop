@@ -17,7 +17,7 @@ export const goodsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(goodsLoading.pending, (state, action) => {
+      .addCase(goodsLoading.pending, (state) => {
         state.status = 'loading';
         state.error = null;
       })
@@ -34,6 +34,7 @@ export const goodsSlice = createSlice({
 
 export const goodsReducer = goodsSlice.reducer;
 export const selectAllGoods = (state) => state.goodsList.goods;
+export const selectNameGoods = (state) => state.goodsList.goods.name;
 
 export const selectGoodsInfo = (state) => ({
   status: state.goodsList.status,

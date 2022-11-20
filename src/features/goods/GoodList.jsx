@@ -1,8 +1,8 @@
-import { useGoods } from './use-goods';
-import { Item } from '../../components/item/Item';
+import { useGoods } from '../hooks/use-loading-goods';
+import { Item } from './item/Item';
 
 const GoodList = () => {
-  const [goods, {status, error}] = useGoods();
+  const [goods, { status, error }] = useGoods();
   console.log(goods);
 
   if (!goods.length) {

@@ -4,6 +4,7 @@ import { selectAllGoods } from '../../store/selectors/goodsSelector';
 
 const Cart = () => {
 
+  
  
 
 

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { goodsLoading } from './goods-slice';
-import { selectGoodsInfo, selectAllGoods } from './goods-slice';
+import { goodsLoading } from '../goods/goods-slice';
+import { selectGoodsInfo, selectAllGoods } from '../goods/goods-slice';
 
 export const useGoods = () => {
   const dispatch = useDispatch();
