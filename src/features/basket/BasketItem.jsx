@@ -6,7 +6,6 @@ import { decQuantity, removeFromBasket } from '../basket/basket-slice';
 
 //!!!!!!!!!!!!тут работает некорректно(!!) 24 строка, узнать разницу между в передаче аргументов {}
 function BasketItem({ id, name, price, quantity }) {
-  const dispatch = useDispatch();
   const [decQuan] = useDecQuantity(id);
   const [incQuan] = useIncQuan(id);
   const [removeItem] = useRemoveBasket(id);
