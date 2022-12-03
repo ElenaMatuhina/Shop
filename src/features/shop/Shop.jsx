@@ -6,6 +6,7 @@ import { BasketList } from '../basket/BasketList';
 import Alert from '../basket/Alert';
 import { useBasketShow } from '../hooks/use-basket-show';
 import { useAlertName } from '../hooks/use-alert-name';
+import { Sort } from '../sort/Sort';
 
 const Shop = () => {
   const [goods, { status, error }] = useGoods();
@@ -14,6 +15,7 @@ const Shop = () => {
 
   return (
     <main className="container content">
+      <Sort/>
       <Cart />
       {error && <h2>Error</h2>}
       {status === 'loading' && <Preloader />}

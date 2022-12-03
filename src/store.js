@@ -3,6 +3,7 @@ import axios from 'axios';
 import * as api from './config';
 import { goodsReducer } from './features/goods/goods-slice';
 import { basketReducer } from './features/basket/basket-slice';
+import { sortReducer } from './features/sort/sort-slice';
 import {
   persistStore,
   persistReducer,
@@ -18,6 +19,7 @@ import storage from 'redux-persist/lib/storage';
 const rootReducer = combineReducers({
   goodsList: goodsReducer,
   basket: basketReducer,
+  sort: sortReducer,
 });
 
 const persistConfig = {

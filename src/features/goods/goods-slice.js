@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { API_URL, API_KEY } from '../../config';
 

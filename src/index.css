@@ -38,6 +38,12 @@ nav {
   z-index: 5;
   padding: 1rem;
 }
+
+.sort {
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+}
 @media (min-width: 767px) {
   .cart {
     top: 5rem;
