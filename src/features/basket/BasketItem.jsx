@@ -2,7 +2,7 @@ import { useDecQuantity } from '../hooks/use-dec_quantity';
 import { useIncQuan } from '../hooks/use-inc-quantity';
 import { useRemoveBasket } from '../hooks/use-remove-basket';
 import { useDispatch } from 'react-redux';
-import { decQuantity, removeFromBasket } from '../basket/basket-slice';
+import { decQuantity, removeFromBasket } from './basket-slice';
 
 //!!!!!!!!!!!!тут работает некорректно(!!) 24 строка, узнать разницу между в передаче аргументов {}
 function BasketItem({ id, name, price, quantity }) {
